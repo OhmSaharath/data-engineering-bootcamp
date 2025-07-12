@@ -126,6 +126,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.env.spark
 env/
 venv/
 ENV/
@@ -194,3 +195,4 @@ data/
 
 # DEB dataengineercafe keyfiles
 dataengineercafe-*.json
+deb-*.json

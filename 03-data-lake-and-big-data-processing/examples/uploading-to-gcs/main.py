@@ -17,10 +17,10 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
     # destination_blob_name = "storage-object-name"
 
     # keyfile = os.environ.get("KEYFILE_PATH")
-    keyfile = "YOUR_KEYFILE_PATH"
+    keyfile = "smooth-ripple-463708-g8-deb-uploading-files-to-gcs-9dc90de39fdb.json"
     service_account_info = json.load(open(keyfile))
     credentials = service_account.Credentials.from_service_account_info(service_account_info)
-    project_id = "YOUR_GCP_PROJECT_ID"
+    project_id = "smooth-ripple-463708-g8"
 
     storage_client = storage.Client(
         project=project_id,

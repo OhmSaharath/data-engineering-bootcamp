@@ -1,0 +1,2 @@
+event_id,session_id,page_url,created_at,event_type,user,order,product
+20c7c553-f6e9-413a-88f8-a6de9cc806b9,48891059-14ec-4dfb-ab0b-ee77aea498cc,https://greenery.com/product/c7050c3b-a898-424d-8d98-ab0aaad7bef4,2023-10-09T00:22:32Z,page_view,d1f08820-32e6-4a31-abba-5aa533bc15a9,,c7050c3b-a898-424d-8d98-ab0aaad7bef4
