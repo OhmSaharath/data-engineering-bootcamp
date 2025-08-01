@@ -1,0 +1,1 @@
+select * from {{ source('greenery', 'order_items') }}

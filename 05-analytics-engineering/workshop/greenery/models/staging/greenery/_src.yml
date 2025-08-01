@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: greenery
+    schema: deb_bootcamp_workshop
+    database: smooth-ripple-463708-g8
+
+    tables:
+      - name: users
+        description: Greenery users
+      - name: events
+        description: Greenery events
+      - name: orders
+        description: Greenery orders
+      - name: addresses
+        description: Greenery addresses
+      - name: order_items
+        description: Greenery order_items
+      - name: products
+        description: Greenery products
+      - name: promos
+        description: Greenery promos

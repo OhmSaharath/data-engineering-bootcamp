@@ -196,3 +196,7 @@ data/
 # DEB dataengineercafe keyfiles
 dataengineercafe-*.json
 deb-*.json
+upload_to_bq.json
+upload_to_gcs.json
+confluent.conf
+07-end-to-end-project/networkrail_consumer/confluent.conf

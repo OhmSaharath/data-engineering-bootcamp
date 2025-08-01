@@ -1,11 +1,12 @@
 import os
 
+from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
-
+load_dotenv()
 # GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 
 def ask_gemini(client, model: str = "gemini-2.0-flash-001", prompt: str = ""):

@@ -10,24 +10,32 @@ from kafka import KafkaConsumer
 
 parser = configparser.ConfigParser()
 parser.read("confluent.conf")
+parser.read("confluent.conf")
 
 confluent_bootstrap_servers = parser.get("config", "confluent_bootstrap_servers")
 confluent_key = parser.get("config", "confluent_key")
 confluent_secret = parser.get("config", "confluent_secret")
+confluent_bootstrap_servers = parser.get("config", "confluent_bootstrap_servers")
+confluent_key = parser.get("config", "confluent_key")
+confluent_secret = parser.get("config", "confluent_secret")
 
-GCP_PROJECT_ID = "YOUR_GCP_PROJECT_ID"
-BUCKET_NAME = "YOUR_BUCKET_NAME"
+GCP_PROJECT_ID = "smooth-ripple-463708-g8"
+BUCKET_NAME = "deb-bootcamp-031"
 BUSINESS_DOMAIN = "networkrail"
 DESTINATION_FOLDER = f"{BUSINESS_DOMAIN}/raw"
-KEYFILE_PATH = "YOUR_KEYFILE_PATH"
+KEYFILE_PATH = "upload_to_gcs.json"
 TOPIC = "networkrail-train-movements"
-CONSUMER_GROUP = "YOUR_CONSUMER_GROUP"
+CONSUMER_GROUP = "Saharath_031"
 
 consumer = KafkaConsumer(
     TOPIC,
     bootstrap_servers=confluent_bootstrap_servers,
     sasl_mechanism="PLAIN",
+    bootstrap_servers=confluent_bootstrap_servers,
+    sasl_mechanism="PLAIN",
     security_protocol="SASL_SSL",
+    sasl_plain_username=confluent_key,
+    sasl_plain_password=confluent_secret,
     sasl_plain_username=confluent_key,
     sasl_plain_password=confluent_secret,
     group_id=CONSUMER_GROUP,

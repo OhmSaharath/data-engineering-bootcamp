@@ -1,10 +1,10 @@
 import os
-
+from dotenv import load_dotenv
 import google.genai as genai
 
-
+load_dotenv()
 # GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 
 def get_embedding(client, model: str = "gemini-embedding-exp-03-07", text: str = ""):
