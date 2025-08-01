@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 # ใส่ API Key ของคุณที่นี่
-genai.configure(api_key="AIzaSyAmJ_0_ldUizJz16IFV1QNLfgvjjK6c0YM")
+genai.configure(api_key="YOUR_API_KEY")
 
 print("โมเดลที่รองรับการสร้างเนื้อหา (generateContent):")
 for m in genai.list_models():
